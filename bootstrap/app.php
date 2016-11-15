@@ -40,8 +40,7 @@ $app->withEloquent();
 
 $app->singleton(
     Illuminate\Contracts\Debug\ExceptionHandler::class,
-    App\Exceptions\Handler::class,
-    Barryvdh\Cors\LumenServiceProvider::class,
+    App\Exceptions\Handler::class
 );
 
 $app->singleton(
